@@ -2,15 +2,15 @@
 id, 				INT, 			NOTNULL / PRIMARY_KEY INDEX
 model				VARCHAR(50), `		NOTNULL / INDEX
 brand				VARCHAR(20), 		NOTNULL / INDEX
-new_car				TINYINT(1), 		NOTNULL / INDEX
-quantity			TINYINT(255), 		NULL / DEFAULT(1)
+new_car				TINYINT, 		NOTNULL / INDEX
+quantity			TINYINT, 		NULL / DEFAULT(1)
 price				DECIMAL(8, 2), 		NOTNULL / INDEX
 status				VARCHAR(20),		NULL
 type_of_engine			VARCHAR(20),		NOTNULL
 type_of_gear			VARCHAR(20),		NULL
 cc				VARCHAR(4),		NOTNULL
 horsepower			VARCHAR(4),		NOTNULL
-door_quantity			TINYINT(10),		NULL
+door_quantity			TINYINT,		NULL
 optional_1			VARCHAR(20),		NULL
 optional_2			VARCHAR(20),		NULL
 optional_3			VARCHAR(20),		NULL
@@ -23,5 +23,5 @@ date_announce			DATETIME,		NOTNULL
 location_announce		VARCHAR(100),		NOTNULL
 current_owner_number		VARCHAR(13),		NULL
 current_owner_email		VARCHAR(50),		NULL
-available			TINYINT(1),		NOTNULL / DEFAULT(1)
+available			TINYINT,		NOTNULL / DEFAULT(1)
 note				TEXT(10000)		NULL
