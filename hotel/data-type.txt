@@ -1,0 +1,30 @@
+ROOMS
+room_id			->	SMALLINT
+max_people_allowed	->	TINYINT
+floor			->	TINYINT
+price			->	DECIMAL(6, 2)
+
+RESERVATIONS
+reservation_id		->	MEDIUMINT
+begin_reservation	->	DATE
+end_reservation		->	DATE
+name			->	VARCHAR(20)
+last_name		->	VARCHAR(20)
+id_number		->	VARCHAR(9)
+payment			->	TINYINT
+conto_corrente		->	VARCHAR(27)
+
+RESERVATION_GUESTS
+guest_id		->	INT
+name			->	VARCHAR(20)
+last_name		->	VARCHAR(20)
+id_number		->	VARCHAR(9)
+
+TYPE_OF_PAYMENTS
+type_of_payment_id	->	TINYINT
+name			->	VARCHAR(50)
+
+FEATURES
+feature_id		->	TINYINT
+name			->	VARCHAR(20)
+
